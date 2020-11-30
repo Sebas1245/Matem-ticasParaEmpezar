@@ -1,0 +1,5 @@
+#4E52A6 - Triángulo 1
+#272A59 - Triángulo 2
+#535FA6 - Triángulo 3
+#8298D9 - Triángulo 4
+#A7C8F2 - Triángulo 5

@@ -18,6 +18,29 @@ function intro() {
     }
 }
 
+function sit1(){
+    let buttonClasses = document.getElementById('sit1btn').classList
+    let feedbackSpan = document.getElementById('feedbackSit1');
+    let answers = [
+        document.getElementById('answer1-2'),
+        document.getElementById('answer2-3'),
+        document.getElementById('answer3-4'),
+        document.getElementById('answer4-1'),
+        document.getElementById('answer5-3')
+    ]
+    let answersRes = answers.map((answer) => {
+        let answerClasslist = answer.classList;
+        console.log(answerClasslist);
+        return answerClasslist[answerClasslist.length-1] == 'correct-dropzone';
+    })
+    if(answersRes.includes(false)){
+        incorrectBadge(buttonClasses, feedbackSpan);
+    }
+    else {
+        correctBadge(buttonClasses, feedbackSpan);
+    }
+}
+
 function correctBadge(buttonClasses, feedbackSpan){
     if(buttonClasses.contains('btn-primary')){
         buttonClasses.remove('btn-primary');

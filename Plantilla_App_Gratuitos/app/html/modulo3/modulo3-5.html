@@ -116,11 +116,11 @@
                                                                                             <div class="row justify-content-center">
                                                                                                 <p class="text-center">
                                                                                                     Un cuarto se puede escribir como 1/4 (un cuarto). En la imagen, podemos observar que 
-                                                                                                    las diviones A, B, C y D todas representan un 1/4 de la banqueta. 
+                                                                                                    las divisiones representan 1/4 de la banqueta. 
                                                                                                 </p>
                                                                                             </div>
                                                                                             <div class="row justify-content-center">
-                                                                                               Imagen va aqui
+                                                                                               <img src="../../assets/images/course/modulo3/banqueta_1.gif" alt="">
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -159,51 +159,34 @@
                                                                                                 </p>
                                                                                             </div>
                                                                                             <div class="row justify-content-center">
-                                                                                               Imagen va aqui
+                                                                                               <img src="../../assets/images/course/modulo3/banqueta_2.gif" alt="">
+                                                                                            </div>
+                                                                                            
+                                                                                            <div class="row justify-content-center my-2"> 
+                                                                                                <p>
+                                                                                                    1. ¿En dos días qué parte de los 100 metros de acera han hecho? 
+                                                                                                    <input type="text" name="questions3-5" id="question1">
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="row justify-content-center my-2"> 
+                                                                                                <p>
+                                                                                                    2. ¿Cuánto falta por hacer de los 100 metros de acera? 
+                                                                                                    <input type="text" name="question3-5" id="question2">
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="row justify-content-center my-2"> 
+                                                                                                <p>
+                                                                                                    3. ¿Cuántos metros hicieron el primero y segundo días?
+                                                                                                    <input type="text" name="question3-5" id="question3">
+                                                                                                </p>
                                                                                             </div>
                                                                                             <div class="row justify-content-center my-2">
-                                                                                                <p>
-                                                                                                    1. ¿Hasta qué parte de la acera terminaron después del segundo día?
-                                                                                                </p>
+                                                                                                <h3>
+                                                                                                    <span id="feedbackSit1" style="display: none;" class="badge"></span>
+                                                                                                </h3>
                                                                                             </div>
-                                                                                            <div class="row justify-content-center">
-                                                                                                <div class="form-check form-check-inline">
-                                                                                                    <input class="form-check-input" type="radio" name="question1" id="optionA">
-                                                                                                    <label class="form-check-label" for="optionA">A</label>
-                                                                                                </div>
-                                                                                                <div class="form-check form-check-inline">
-                                                                                                    <input class="form-check-input" type="radio" name="question1" id="optionA">
-                                                                                                    <label class="form-check-label" for="optionA">B</label>
-                                                                                                </div>
-                                                                                                <div class="form-check form-check-inline">
-                                                                                                    <input class="form-check-input" type="radio" name="question1" id="optionA">
-                                                                                                    <label class="form-check-label" for="optionA">C</label>
-                                                                                                </div>
-                                                                                                <div class="form-check form-check-inline">
-                                                                                                    <input class="form-check-input" type="radio" name="question1" id="optionA">
-                                                                                                    <label class="form-check-label" for="optionA">D</label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="row justify-content-center my-2"> 
-                                                                                                <p>
-                                                                                                    2. ¿En dos días qué parte de los 100 metros de acera han hecho? 
-                                                                                                    <input type="text" name="question2" id="question2">
-                                                                                                </p>
-                                                                                            </div>
-                                                                                            <div class="row justify-content-center my-2"> 
-                                                                                                <p>
-                                                                                                    3. ¿Cuánto falta por hacer de los 100 metros de acera? 
-                                                                                                    <input type="text" name="question3" id="question3">
-                                                                                                </p>
-                                                                                            </div>
-                                                                                            <div class="row justify-content-center my-2"> 
-                                                                                                <p>
-                                                                                                    4. ¿Cuántos metros hicieron el primero y segundo días?
-                                                                                                    <input type="text" name="question4" id="question4">
-                                                                                                </p>
-                                                                                            </div>
-                                                                                            <div class="row justify-content-center">
-                                                                                                <button class="btn btn-primary">Revisar</button>
+                                                                                            <div class="row justify-content-center"> 
+                                                                                                <button id="sit1btn" onclick="sit1()" class="btn btn-primary">Revisar</button>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -242,7 +225,7 @@
                                                                                                 </p>
                                                                                             </div>
                                                                                             <div class="row justify-content-center my-4">
-                                                                                                Imagen va aquí 
+                                                                                                <img src="../../assets/images/course/modulo3/banqueta_3.gif" alt="">
                                                                                             </div>  
                                                                                             <div class="row justify-content-center my-4">
                                                                                                <div class="col-md-6">
@@ -260,9 +243,14 @@
                                                                                                             </div>
                                                                                                         </div>
                                                                                                    </div>
-                                                                                                   <div class="row justify-content-center my-3">
-                                                                                                        <button class="btn btn-primary">Revisar</button>
-                                                                                                   </div>
+                                                                                                   <div class="row justify-content-center my-2">
+                                                                                                    <h3>
+                                                                                                        <span id="feedbackSit21" style="display: none;" class="badge"></span>
+                                                                                                    </h3>
+                                                                                                    </div>
+                                                                                                    <div class="row justify-content-center"> 
+                                                                                                        <button id="sit21btn" onclick="sit2_1()" class="btn btn-primary">Revisar</button>
+                                                                                                    </div>
                                                                                                </div>
                                                                                                <div class="col-md-6">
                                                                                                     <div class="row justify-content-center text-dark">
@@ -273,13 +261,18 @@
                                                                                                             <input width="64px" type="text" name="metersRepaired1" id="metersRepaired1">
                                                                                                          </div>
                                                                                                     </div>
-                                                                                                    <div class="row justify-content-center mt-5 pt-2">
-                                                                                                         <button class="btn btn-primary">Revisar</button>
+                                                                                                    <div class="row justify-content-center my-2">
+                                                                                                        <h3>
+                                                                                                            <span id="feedbackSit22" style="display: none;" class="badge"></span>
+                                                                                                        </h3>
+                                                                                                        </div>
+                                                                                                    <div class="row justify-content-center"> 
+                                                                                                            <button id="sit22btn" onclick="sit2_2()" class="btn btn-primary">Revisar</button>
                                                                                                     </div>
                                                                                                </div>
                                                                                             </div>
                                                                                             <div class="row justify-content-center my-4">
-                                                                                                Imagen va aquí 
+                                                                                                <img src="../../assets/images/course/modulo3/banqueta_4.gif" alt="">
                                                                                             </div>  
                                                                                             <div class="row justify-content-center my-4">
                                                                                                <div class="col-md-6">
@@ -297,9 +290,14 @@
                                                                                                             </div>
                                                                                                         </div>
                                                                                                    </div>
-                                                                                                   <div class="row justify-content-center my-3">
-                                                                                                        <button class="btn btn-primary">Revisar</button>
-                                                                                                   </div>
+                                                                                                   <div class="row justify-content-center my-2">
+                                                                                                    <h3>
+                                                                                                        <span id="feedbackSit23" style="display: none;" class="badge"></span>
+                                                                                                    </h3>
+                                                                                                    </div>
+                                                                                                    <div class="row justify-content-center"> 
+                                                                                                        <button id="sit23btn" onclick="sit2_3()" class="btn btn-primary">Revisar</button>
+                                                                                                    </div>
                                                                                                </div>
                                                                                                <div class="col-md-6">
                                                                                                     <div class="row justify-content-center text-dark">
@@ -310,8 +308,13 @@
                                                                                                             <input width="64px" type="text" name="metersRepaired2" id="metersRepaired2">
                                                                                                          </div>
                                                                                                     </div>
-                                                                                                    <div class="row justify-content-center mt-5 pt-2">
-                                                                                                         <button class="btn btn-primary">Revisar</button>
+                                                                                                    <div class="row justify-content-center my-2">
+                                                                                                        <h3>
+                                                                                                            <span id="feedbackSit24" style="display: none;" class="badge"></span>
+                                                                                                        </h3>
+                                                                                                    </div>
+                                                                                                    <div class="row justify-content-center"> 
+                                                                                                            <button id="sit24btn" onclick="sit2_4()" class="btn btn-primary">Revisar</button>
                                                                                                     </div>
                                                                                                </div>
                                                                                             </div>
@@ -323,23 +326,26 @@
                                                                                             <div class="row justify-content-center"> 
                                                                                                 <div class="col text-dark d-flex justify-content-center">
                                                                                                     <div class="form-check mx-2">
-                                                                                                        <input type="radio" class="form-check-input" name="repairComp" id="option1">
+                                                                                                        <input type="radio" class="form-check-input" name="repairComp" id="option1" value="no">
                                                                                                         <label for="option1" class="form-check-label">
                                                                                                             Es diferente la cantidad de tramo hecho en cada acera.
                                                                                                         </label>
                                                                                                     </div>
                                                                                                     <div class="form-check mx-2">
-                                                                                                        <input type="radio" class="form-check-input" name="repairComp" id="option2">
+                                                                                                        <input type="radio" class="form-check-input" name="repairComp" id="option2" value="yes">
                                                                                                         <label for="option2" class="form-check-label">
                                                                                                             Los tramos de acera hechos son iguales. 
                                                                                                         </label>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="row justify-content-center my-3">
-                                                                                                <button class="btn btn-primary">
-                                                                                                    Revisar
-                                                                                                </button>
+                                                                                            <div class="row justify-content-center my-2">
+                                                                                                <h3>
+                                                                                                    <span id="feedbackSit25" style="display: none;" class="badge"></span>
+                                                                                                </h3>
+                                                                                            </div>
+                                                                                            <div class="row justify-content-center"> 
+                                                                                                <button id="sit25btn" onclick="sit2_5()" class="btn btn-primary">Revisar</button>
                                                                                             </div>
                                                                                             <div class="row justify-content-center">
                                                                                                 <p class="text-center">
@@ -440,6 +446,7 @@
 
     <!-- Insert your dependencies here -->
     <script type="module" src="../../assets/js/dragDropAnimation.js"></script>
+    <script src="../../assets/js/scripts/modulo3/modulo3-5.js"></script>
 
 </body>
 

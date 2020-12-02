@@ -31,6 +31,40 @@ function sit1() {
     }
 }
 
+function sit2_1() {
+    let buttonClasses = document.getElementById('sit21btn').classList
+    let feedbackSpan = document.getElementById('feedbackSit21');
+    let ans1 = document.getElementById('ribbon1').value;
+    let ans2 = document.getElementById('ribbon2').value;
+    let ans3 = document.getElementById('ribbon3').value;
+    let ans4 = document.getElementById('ribbon4').value;
+    let ans5 = document.getElementById('ribbon5').value;
+    let ans6 = document.getElementById('ribbon6').value;
+    const correctAnswer1 = ans1 >= 9 && ans1 <= 11;
+    const correctAnswer2 = ans2 >= 5 && ans2 <= 7;
+    const correctAnswer3 = ans3 >= 10 && ans3 <= 12;
+    const correctAnswer4 = ans4 >= 8 && ans4 <= 10;
+    const correctAnswer5 = ans5 >= 4 && ans5 <= 6;
+    const correctAnswer6 = ans6 >=1 && ans6 <= 3;
+    if(correctAnswer1 && correctAnswer2 && correctAnswer3 && correctAnswer4 && correctAnswer5 && correctAnswer6){
+        correctBadge(buttonClasses, feedbackSpan);
+    }
+    else {
+        incorrectBadge(buttonClasses, feedbackSpan);
+    }
+}
+function sit2_2() {
+    let buttonClasses = document.getElementById('sit22btn').classList
+    let feedbackSpan = document.getElementById('feedbackSit22');
+    let ans = document.getElementById('decorationAmount').value;
+    if(ans == 1 || ans == 2) {
+        correctBadge(buttonClasses, feedbackSpan);
+    }
+    else {
+        incorrectBadge(buttonClasses, feedbackSpan);
+    }
+}
+
 function correctBadge(buttonClasses, feedbackSpan){
     if(buttonClasses.contains('btn-primary')){
         buttonClasses.remove('btn-primary');
